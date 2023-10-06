@@ -1,0 +1,12 @@
+#main-app{
+    background-color: #37393F;
+    display: grid;
+    grid-template-rows: 80px 1fr 100px;
+    min-height: 100vh;
+    max-height: 200vh;
+    max-width: 100vw;
+    grid-template-areas: 
+    'head'
+    'hero'
+    'footer';
+}

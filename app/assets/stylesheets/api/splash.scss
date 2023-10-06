@@ -1,0 +1,191 @@
+
+#splash {
+    background-color: #37393F;
+    display: grid;
+    grid-template-rows: 80px 1fr 100px;
+    min-height: 100vh;
+    max-height: 200vh;
+    max-width: 100vw;
+    grid-template-areas: 
+    'head'
+    'hero'
+    'footer';
+}
+
+#splash-head {
+    background-color: #2E3037;
+    display: flex;
+    grid-area: head;
+    justify-content: space-around;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+}
+
+li a{
+    padding-left: 30px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-weight: 550;
+}
+
+li a:hover {
+    text-decoration: underline;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#logo-link {
+    padding-top: 12px;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: white;
+}
+
+#button-container {
+    display: flex;
+    align-self: center;
+    text-align: center;
+}
+
+#landingbutton {
+    background-color: white;
+    font-size: 14px;
+    padding-top: 13px;
+    border-radius: 20px;
+    width: 65px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    // align-self: center;
+    // text-align: center;
+}
+
+#landingbutton:hover {
+    color: blue;
+}
+
+#registerbutton {
+    background-color: #23272A;
+    font-size: 14px;
+    padding-top: 13px;
+    border-radius: 20px;
+    width: 65px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#registerbutton:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+#hero-container {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px;
+}
+
+#splash-body-header {
+    grid-row: 4 / 7;
+    grid-column: 6 / 11;
+    font-size: 56px;
+    color: white; 
+    font-family: 'Changa One', cursive;  
+}
+
+#splash-body-body {
+    color: white;
+    font-size: 20px;
+    grid-column: 4 / 12;
+    grid-row:  7 / 10;
+    line-height: 2;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+#contact-button {
+    background-color: white;
+    font-size: 20px;
+    padding: 16px 32px;
+    border-radius: 40px;
+    border: none;
+    width: 400px;
+    height: 65px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    grid-row: 11 / 13;
+    grid-column: 4 / 8;
+}
+
+#contact-button:hover {
+    color: blue;
+}
+
+#open-in-browser-button {
+    background-color: #23272A;
+    font-size: 20px;
+    padding: 16px 32px;
+    border-radius: 40px;
+    border: none;
+    width: 400px;
+    height: 65px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    grid-row: 11 / 13;
+    grid-column: 8 / 12;
+    padding-bottom: 20px;
+    color: white;
+}
+
+#open-in-browser-button:hover {
+    background-color: rgb(88, 88, 88);
+}
+
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bye {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 12px;
+}
+
+#logged-in-landing-button {
+    background-color: #23272A;
+    font-size: 14px;
+    padding-top: 13px;
+    border-radius: 20px;
+    width: 80px;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#logged-in-landing-button:hover {
+    background-color: rgb(88, 88, 88);
+}

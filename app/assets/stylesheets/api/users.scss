@@ -1,0 +1,148 @@
+// Place all the styles related to the api/users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#login-form {
+    background-color: #2E3037;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// #form-border {
+//     display: flex;
+//     justify-content: center;
+// }
+
+#login-actual-form {
+    background-color: #36383e;
+    height: 400px;
+    width: 500px; 
+    border-radius: 10px;
+    display: flex;
+    // align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 32px;
+}
+
+#login-actual-form > label {
+    color: #aeb0b5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;   
+    font-size: 12px;
+    margin-left: 48px;
+}
+
+#login-actual-form > h1 {
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;  
+    font-weight: 700;
+    color: #eeeff1;
+    margin-left: 170px;
+}
+
+#login-actual-form > p {
+    font-size: 16px;
+    color: #9a9ca0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 115px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input[type = text], input[type = password], input[type = date] {
+    box-sizing: border-box;
+    width: 89%;
+    padding: 10px 0;
+    background-color: #212224;
+    border: none;
+    border-radius: 4px;
+    margin: 13px 0;
+    outline: none;
+    font-size: 16px;
+    color: lightgrey;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+}
+
+// input[type = password], select {
+//     width: 80%;
+//     padding: 10px 0;
+//     background-color: #212224;
+//     border: none;
+//     border-radius: 4px;
+// }
+
+input[type = submit] {
+    width: 80%;
+    background-color: #5864f3;
+    color: #f4f4ff;
+    padding: 14px 20px;
+    border-radius: 4px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 48px;
+}
+
+input[type = submit]:hover {
+    background-color: #4f5bd9;
+}
+
+#actual-register-form {
+    background-color: #36383e;
+    height: 650px;
+    width: 500px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#actual-register-form > h1 {
+    font-size: 25px;
+    font-family: 'Source Sans Pro', sans-serif;  
+    font-weight: 700;
+    color: #eeeff1;
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+
+#actual-register-form > h5 {
+    color: #aeb0b5;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;   
+    font-size: 14px;
+    margin-left: 48px;
+}
+
+#terms-container {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 9px;
+    color: darkgrey;
+}
+
+#terms-checkbox {
+    margin-left: 48px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#demo-link {
+    margin-top: 18px;
+    margin-left: 48px;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: rgb(12, 93, 170);
+}
+
+#demo-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
