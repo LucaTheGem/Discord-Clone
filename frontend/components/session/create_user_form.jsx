@@ -1,4 +1,5 @@
 import React from "react";
+import Modal from "../errors/modal";
 
 class CreateUser extends React.Component {
     constructor(props){
@@ -19,11 +20,6 @@ class CreateUser extends React.Component {
     }
 
     render(){ 
-        if (this.state.errors) {
-            return (
-                <h1>oops</h1>
-            )
-        }
         return (
             <div id="login-form">
                 <form onSubmit={this.handleSubmit} id='actual-register-form'>
