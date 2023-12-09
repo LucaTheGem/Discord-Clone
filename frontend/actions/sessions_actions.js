@@ -21,7 +21,7 @@ export const receiveSessionErrors = errors => ({
 export const signup = user => dispatch => (
     SessionApiUtil.signup(user)
         .then(user => dispatch(receiveCurrentUser(user))),
-            (err => dispatch(receiveSessionErrors(err)))
+        (errors => dispatch(receiveSessionErrors(errors)))
 );
 
 export const login = user => dispatch => (

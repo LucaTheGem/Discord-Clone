@@ -4,7 +4,7 @@ class Api::UsersController < ApplicationController
         if @user.save
             redirect_to root_url
         else
-            render json: ["Invalid username/password"], status: 401     
+            render :json => { :errors => @user.errors.full_messages }, :status => 422   
         end
     end
 
