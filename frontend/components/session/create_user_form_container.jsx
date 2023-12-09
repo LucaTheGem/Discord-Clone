@@ -3,14 +3,6 @@ import { signup } from '../../actions/sessions_actions';
 import CreateUser from './create_user_form';
 
 const mapStatetoProps = (state) => ({
-    user: {
-        username: '',
-        email: '',
-        password: '',
-        tag: '',
-        terms_of_service: '',
-        birth_date: ''
-    },
     errors: state.errors
 });
 
