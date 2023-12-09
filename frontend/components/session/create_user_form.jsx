@@ -1,5 +1,4 @@
 import React from "react";
-import Modal from "../errors/modal";
 
 class CreateUser extends React.Component {
     constructor(props){
