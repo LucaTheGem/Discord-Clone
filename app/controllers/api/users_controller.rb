@@ -4,7 +4,7 @@ class Api::UsersController < ApplicationController
         if @user.save
             redirect_to root_url
         else
-            render :json => { :errors => @user.errors.full_messages }, :status => 422   
+            render json: @user.errors.full_messages, status: 401 
         end
     end
 

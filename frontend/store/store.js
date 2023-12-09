@@ -12,4 +12,6 @@ const configureStore = (preloadedState={}) => (
     )
 );
 
+window.store = configureStore;
+
 export default configureStore;

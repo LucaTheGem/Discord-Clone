@@ -19,7 +19,6 @@ class CreateUser extends React.Component {
     }
 
     render(){ 
-        console.log(this.props)
         return (
             <div id="login-form">
                 <form onSubmit={this.handleSubmit} id='actual-register-form'>
