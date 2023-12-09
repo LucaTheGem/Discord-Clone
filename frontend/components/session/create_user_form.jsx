@@ -11,7 +11,7 @@ class CreateUser extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.action(this.state);
+        this.props.signUp(this.state);
     }
 
     update(title) {
