@@ -1,5 +1,5 @@
 import React from 'react';
-import create_user_form_container from '../session/create_user_form_container';
+import CreateUserForm from '../session/create_user_form_container';
 
 class Modal extends React.Component {
     constructor(props) {
@@ -21,14 +21,14 @@ class Modal extends React.Component {
         let form;
         switch (modal) {
             case 'signup':
-                form = <create_user_form_container />;
+                form = <CreateUserForm />
                 break;
             default:
                 return null;
         }
           
         return (
-            <div className="modal-background" onClick={this.close}>
+            <div id="modal-background" onClick={this.close}>
                 <div className={`${modal}-modal-child`} onClick={e => e.stopPropagation()}>
                     { form }
                 </div>

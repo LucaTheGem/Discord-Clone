@@ -11,7 +11,7 @@ class CreateUser extends React.Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        this.props.signUp(this.state);
+        this.props.signUp(this.state).then(this.props.closeModal).then(this.props.removeErrors);
     }
 
     update(title) {
@@ -19,8 +19,54 @@ class CreateUser extends React.Component {
     }
 
     render(){ 
+
+        const { errors } = this.props;
+        
+        let fcolor = '';
+        let lcolor = '';
+        let ecolor = '';
+        let pcolor = ''
+        
+        const errorHandler = {}
+
+        if (errors.includes("Email can't be blank")) {
+            errorHandler['email'] = "Email can't be blank";
+            fcolor = 'red'
+        }
+        if (errors.includes("Birth Date can't be blank")) {
+            errorHandler['birthdate'] = "Birth Date can't be blank";
+            lcolor = 'red'
+        }
+        if (errors.includes("Email can't be blank")) {
+            errorHandler['email'] = "Email can't be blank";
+            ecolor = 'red'
+        }
+        if (errors.includes("Password is too short (minimum is 6 characters)")) {
+            errorHandler['password'] = "Password is too short (minimum is 6 characters)";
+            pcolor = 'red'
+        }
+        if (errors.includes("Tag can't be blank")) {
+            errorHandler['tag'] = "Tag can't be blank";
+            ecolor = 'red'
+        }
+        if (errors.includes("Tag is the wrong length (should be 4 characters)")) {
+            errorHandler['taglength'] = "Tag is the wrong length (should be 4 characters)";
+            pcolor = 'red'
+        }
+
         return (
             <div id="login-form">
+
+                <div id="signup-errors">
+                            <ul>
+                                {
+                                    Object.values(errorHandler).map((error, i) => (
+                                        <li key={`${i}`}>{error}</li>
+                                    ))
+                                }
+                            </ul>
+                </div>
+
                 <form onSubmit={this.handleSubmit} id='actual-register-form'>
                     <h1>Create an account</h1>
                     <h5>USERNAME
